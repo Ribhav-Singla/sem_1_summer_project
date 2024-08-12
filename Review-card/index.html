@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0cbb2fce8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body onload="display_value(50)">
+    <div class="outer-container">
+        <div class="inner-container">
+            <header class="signup-header">
+                <h1 class="neon-text" style="font-family: Aladin; font-size: 3rem;">Review</h1>
+                <p style="font-family: Aladin; font-size: 1.3rem;">Your review's are appreciated</p>
+            </header>
+            <main class="signup-body">
+                <form action="#" id="signupform">
+                    <p>
+                        <label class="neon-text" for="FullName" style="font-family: Aladin; font-size: 1.4rem;">Full Name</label>
+                        <input type="text" id="FullName" placeholder="Ribhav Singla" style="border-color: black; backdrop-filter: blur(10px);  background: linear-gradient(to top left, #ffffffff,#ffffff33);">
+                    </p>
+                    <p>
+                        <label class="neon-text" for="Image" style="font-family: Aladin; font-size: 1.4rem;">Image</label>
+                        <input type="file" name="Image" id="Image" style="background-color: white; border-color: black;  background: linear-gradient(to top left, #ffffffff,#ffffff33);">
+                    </p>
+                    <p>
+                        <label class="neon-text" for="Satisfy" style="font-family: Aladin; font-size: 1.4rem;">Satisfy Value: <output id="value"></output> %</label>
+                        <input type="range" name="Satisfy" id="Satisfy" value="50" step="5" min="0" max="100" onclick="display_value(value)">  
+                        <!-- <h3 style="font-family: Aladin; font-size: 1.4rem;"></h3> -->
+                    </p>
+                    <p>
+                        <label class="neon-text" for="Review" style="font-family: Aladin; font-size: 1.4rem;">Review</label>
+                        <textarea name="Review" id="Review" cols="71" rows="10" placeholder="Excellent Quality ..." style="font-size: 15px; padding: 10px; font-family: sans-serif; border-color: black; border-radius: 4px;  background: linear-gradient(to top left, #ffffffff,#ffffff33);"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Submit" style="font-family: Aladin; font-size: 1.3rem;">
+                    </p>
+                </form>
+            </main>
+        </div>
+        <div class="circle c1 circle-container">
+            <div class="box">
+                <!-- <i class="fa-solid fa-shirt fa-2xl" style="color: #000000;"></i> -->
+                <!-- <i class="fa-regular fa-face-grin-stars fa-2xl" style="color: #000000;"></i> -->
+                <i class="fa-regular fa-face-smile fa-spin fa-2xl" style="color: #000000;"></i>
+            </div>
+        </div>
+        <div class="circle c2 circle-container">
+            <div class="box">
+                <!-- <i class="fa-solid fa-shirt fa-2xl" style="color: #000000;"></i> -->
+                <!-- <i class="fa-regular fa-face-grin-stars fa-2xl" style="color: #000000;"></i> -->
+                <i class="fa-regular fa-face-smile fa-spin fa-2xl" style="color: #000000;"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>

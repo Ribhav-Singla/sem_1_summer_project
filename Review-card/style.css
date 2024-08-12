@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lato', sans-serif;
+    /* background: linear-gradient(to right,#6b9080,#a4c3b2,#cce3de,#eaf4f4,#f6fff8,#eaf4f4,#cce3de,#a4c3b2,#6b9080); */
+    /* background: linear-gradient(45deg,#10451D,#155D27,#1A7431,#208B3A,#25A244,#2DC653,#4AD66D,#6EDE8A,#4AD66D,#2DC653,#25A244,#208B3A,#1A7431,#155D27,#10451D); */
+    background: linear-gradient(45deg,#99E2B4,#88D4AB,#78C6A3,#67B99A,#56AB91,#469D89,#358F80,#248277,#248277,#358F80,#469D89,#56AB91,#67B99A,#78C6A3,#88D4AB,#99E2B4);
+    animation: color_change 4s infinite linear alternate;
+    background-size: 300%;
+}
+@keyframes color_change{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+.outer-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-container{
+    width: 600px;
+    padding: 10px 40px;
+    background: linear-gradient(to top left, #ffffffff,#ffffff33);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px #6b9080;
+}
+.signup-header h1{
+    font-size: 2.5rem;
+    color: rgb(12, 12, 12);
+}
+.signup-header p{
+    font-size: 0.8rem;
+    color: rgb(88, 87, 87);
+}
+.signup-body{
+    margin:20px 0px;
+}
+.signup-body p{
+    margin: 10px 0px;
+}
+.signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    transition: all 1s ease;
+}
+
+.signup-body p input[type="submit"]{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+}
+.signup-body p input[type="submit"]:hover{
+    background-color:rgb(205, 205, 205);
+    color: black;
+}
+.signup-footer p{
+    text-align: center;
+    color: #3f3e3ecc;
+}
+.signup-footer p a{
+    color: rgb(0, 188, 255);
+}
+.circle{
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgb(235, 234, 234);
+    box-shadow: 0 0 40px rgb(235,234,234);
+    border-radius: 50%;
+    background: linear-gradient(to top,#6b9080,#a4c3b2,#a4c3b2,#6b9080);
+    position: absolute;
+}
+.c1{
+    top:100px;
+    left:90px;
+}
+.c2{
+    bottom: 100px;
+    right: 90px;
+}
+.circle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width:  50px;
+    animation: scale-in;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 20px black;
+    border-radius: 50%;
+    /* animation: orbital 4s linear infinite; */
+               /* scale-in 2s linear infinite; */
+
+}
+@keyframes orbital{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes scale-in{
+    0%{
+        transform: scale(1);
+    }
+    25%,75%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* .bg_animation{
+    background: linear-gradient(45deg,#10451D,#155D27,#1A7431,#208B3A,#25A244,#2DC653,#4AD66D,#6EDE8A,#92E6A7,#B7EFC5);
+    animation: color_change 4s infinite alternate;
+} */
+
+.neon-text{
+    color: black;
+    text-shadow: 0 0 7px white,
+                 0 0 10px white,
+                 0 0 21px white;
+}

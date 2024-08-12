@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirts.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0cbb2fce8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- nav section -->
+    <nav>
+        <div class="header container flex">
+            <div class="company-name">
+                <h2 id="company-name">Shirts.Com</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <div class="sub-link">
+                    <a href="#shirt" id="shirts">Shirt</a>
+                    <div class="sub-menu">
+                        <a href="#small">small</a>
+                        <a href="#medium">medium</a>
+                        <a href="#large">large</a>
+                        <a href="#xx-large">xx large</a>
+                    </div>
+                </div>
+                
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+                <a href="Login Page/index.html" target="_blank">Account</a>
+            </div>
+            <div class="nav-logo">
+                <a href="Review-card/index.html" target="_blank"><i class="fa-regular fa-pen-to-square fa-2xl" style="color: rgb(255, 255, 255)"></i></a>
+                <a href="#"><i class="fa-regular fa-heart fa-2xl" style="color: rgb(255, 255, 255)"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: rgb(255, 255, 255);"></i></a>
+                <a href="Login Page/index.html" target="_blank"><i class="fa-regular fa-user fa-2xl" style="color: rgb(255, 255, 255)"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <!-- <div  class="banner">
+        <marquee scrollamount="4" class="banner-blink" width="800px" >#Offers Coming Soon!!</marquee>
+    </div> -->
+
+    <!-- home section -->
+    <section class="home-section container flex" id="home">
+        <div class="home-section-content">
+            <h2 style="font-family: 'Aladin', cursive; font-size: 2.3rem;" class="para">Latest Collection</h2>
+            <h3 style="font-family: 'Aladin', cursive; font-size: 1.6rem;" class="para">#trends</h3>
+            <p style="font-family: 'Bubblegum Sans', cursive; font-size: 1.4rem;" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, libero laborum cum quis deserunt, harum expedita eum repudiandae recusandae labore pariatur autem ratione atque veritatis, dolorem optio sequi laudantium beatae?</p>
+            <a href="#" class="hover-link">Learn more</a>
+        </div>
+        <div class="home-section-img">
+            <!-- <img src="IMAGES/shirt-1.jpg" alt="shirt" height="400px"> -->
+            <video src="https://d5glw3nnbe3pc.cloudfront.net/transcode/storyTeller/A2MRJASP2ENBCI/1637586921345/2624383f-7f18-4a76-b84b-66889794ae6f/1637586579067sbv.mp4" autoplay muted loop height="450px" style="border-radius: 10px; box-shadow: 0 0 30px white;"></video>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about-section container" id="about">
+        <div class="section-header">
+            About Us
+        </div>
+        <div class="about-section-content flex">
+            <img src="IMAGES/why-choose-us.jpg" alt="" height="400px" width="800px" style="border-radius: 8px; box-shadow: 0 0 30px white;">
+            <div class="about-us">
+                <h2 style="font-family: 'Aladin', cursive; font-size: 2.3rem;" class="para">Why Choose us?</h2>
+                <p style="font-family: 'Bubblegum Sans', cursive; font-size: 1.4rem; " class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo hic consequatur magni amet perspiciatis sapiente dolor vitae ad quasi!</p>
+                <p style="font-family: 'Bubblegum Sans', cursive; font-size: 1.4rem;" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam vero consequatur eius perferendis a, debitis ratione architecto nostrum eos?</p>
+                <a href="#" class="hover-link">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- shirt section -->
+    <section class="shirt-section container flex" id="shirt">
+        <div class="section-header">
+            #Trending Collection
+        </div>
+        <div class="shirt-section-content container flex">
+            <!-- 1 -->
+            <div class="shirt-card" id="small">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-1.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>IndoPrime</h3>
+                    <p>Men's Regular Fit Casual Shirt</p>
+                    <span>
+                        <sup>₹</sup><span class="shirt-price">599</span>
+                            <span class="shirt-mrp">
+                                <small>M.R.P: <del>₹1,999</del></small>
+                            </span>
+                        <small>(70% off)</small>
+                    </span>
+                    <div>
+                        <label for="shirt-size">Size: </label>
+                        <select name="size" id="shirt-size" class="shirt-size-button">
+                            <option value="Small" selected>small</option>
+                            <option value="Medium">medium</option>
+                            <option value="Large">large</option>
+                            <option value="XXLarge">xx large</option>
+                        </select>
+                    </div>
+                    <div class="shirt-cart flex">
+                        <!-- <a href="" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                        <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(0)">
+                        <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-2.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>Dennis Lingo</h3>
+                <p>Men Casual Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">573</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,849</del></small>
+                    </span>
+                    <small>(69% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small" selected>small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(1)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-5.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>Allen Solly</h3>
+                <p>Men's Slim Fit Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">784</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,399</del></small>
+                    </span>
+                    <small>(48% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small" selected>small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(2)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-8.jpg" alt="shirt-1" class="shirt-card-img" width="170px" height="252px">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>United Colors of Benetton</h3>
+                <p>Men's Slim Fit Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">1,479</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹2,999</del></small>
+                    </span>
+                    <small>(51% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small" selected>small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(3)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="shirt-card" id="medium">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-4.jpg" alt="shirt-1" class="shirt-card-img" height="247px">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>Lymio</h3>
+                <p>Lymio Casual Shirt for Men</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">349</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹4,999</del></small>
+                    </span>
+                    <small>(93% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium" selected>medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(4)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-15.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>Majestic Man</h3>
+                <p>Slim Fit Cotton Casual Check Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">459</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,499</del></small>
+                    </span>
+                    <small>(69% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium" selected>medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(5)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-3.jpg" alt="shirt-1" class="shirt-card-img" height="247px">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>Peter England</h3>
+                <p> Men Shirt </p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">839</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,599</del></small>
+                    </span>
+                    <small>(48% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium" selected>medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(6)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-17.jpg" alt="shirt-1" class="shirt-card-img" height="247">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>United Colors of Benetton</h3>
+                <p>Men's Slim Fit Shirt </p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">1,949</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹2,999</del></small>
+                    </span>
+                    <small>(35% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium" selected>medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(7)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="shirt-card" id="large">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-23.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>LookMark</h3>
+                <p>Men's Poly Cotton Printed Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">349</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,199</del></small>
+                    </span>
+                    <small>(71% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large" selected>large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(8)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-20.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>IndoPrime</h3>
+                <p>Men's Regular Fit Casual Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">599</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,999</del></small>
+                    </span>
+                    <small>(70% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large" selected>large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(9)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-21.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>KINGDOM OF WHITE</h3>
+                <p>Regular Collar Shirt for Men</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">1,349</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,499</del></small>
+                    </span>
+                    <small>(10% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large" selected>large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(10)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-18.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>HammerSmith</h3>
+                <p>Men Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">549</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹2,499</del></small>
+                    </span>
+                    <small>(78% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large" selected>large</option>
+                        <option value="XXLarge">xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(11)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="shirt-card" id="xx-large">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-30.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>LookMark</h3>
+                <p>Stitched Printed Half Sleeve Shirt</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">329</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,999</del></small>
+                    </span>
+                    <small>(84% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge" selected>xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(12)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-31.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>DHRUVI TRENDZ</h3>
+                <p>Opaqu Cotton Shirts for Men</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">279</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,999</del></small>
+                    </span>
+                    <small>(86% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge" selected>xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(13)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-32.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>IndoPrimo</h3>
+                <p>Casual Shirt for Men Half Sleeves</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">399</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹1,999</del></small>
+                    </span>
+                    <small>(80% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge" selected>xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(14)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+            <!-- 16 -->
+            <div class="shirt-card">
+                <div class="shirt-img">
+                    <img src="IMAGES/shirt-33.jpg" alt="shirt-1" class="shirt-card-img">
+                </div>
+                <div class="shirt-card-info">
+                    <h3>Kizyoo</h3>
+                <p>Mens Printed Casual fit Shirts</p>
+                <span>
+                    <sup>₹</sup><span class="shirt-price">490</span>
+                    <span class="shirt-mrp">
+                        <small>M.R.P: <del>₹999</del></small>
+                    </span>
+                    <small>(51% off)</small>
+                </span>
+                <div>
+                    <label for="shirt-size">Size: </label>
+                    <select name="size" id="shirt-size" class="shirt-size-button">
+                        <option value="Small">small</option>
+                        <option value="Medium">medium</option>
+                        <option value="Large">large</option>
+                        <option value="XXLarge" selected>xx large</option>
+                    </select>
+                </div>
+                <div class="shirt-cart flex">
+                    <!-- <a href="#" class="shirt-cart-button" onclick="cartfunction()">Add to cart</a> -->
+                    <input type="button" value="Add to cart" class="shirt-cart-button" onclick="cartfunction(15)">
+                    <input class="shirt-quantity-button" type="number" name="quantity" id="quantity" value="1">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="shirt-section-footer ">
+            <a href="#" class="hover-link">More  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+        </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review-section container flex" id="review">
+        <div class="section-header">Customer's Review</div> 
+        <div class="review-section-content flex">
+            <div class="review-card">
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <p class="para" style="margin-top: 15px; font-family: 'Bubblegum Sans', cursive; font-size: 1.2rem; word-spacing: 3px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, labore ex eos corrupti excepturi ad. Dolore tenetur ipsa corrupti. Autem, nihil in dolorum laboriosam nesciunt quisquam magnam doloremque sint dolorem incidunt, ducimus vel quia voluptatum ad obcaecati sed suscipit illum.</p>
+                <div class="flex customer-info">
+                    <img src="IMAGES/customer-2.jpg" alt="customer-2" class="review-img">
+                    <div>
+                        <h2 class="para" style="font-family: 'Aladin', cursive; font-size: 2rem;">John Doe</h2>
+                        <h4 class="happy-customer para" style="font-family: 'Aladin', cursive; font-size: 1.2rem;">Happy Customer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <p class="para" style="margin-top: 15px; font-family: 'Bubblegum Sans', cursive; font-size: 1.2rem; word-spacing: 3px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, labore ex eos corrupti excepturi ad. Dolore tenetur ipsa corrupti. Autem, nihil in dolorum laboriosam nesciunt quisquam magnam doloremque sint dolorem incidunt, ducimus vel quia voluptatum ad obcaecati sed suscipit illum.</p>
+                <div class="flex customer-info">
+                    <img src="IMAGES/customer-4.jpg" alt="customer-2" class="review-img">
+                    <div>
+                        <h2 class="para" style="font-family: 'Aladin', cursive; font-size: 2rem;">Aaron</h2>
+                        <h4 class="happy-customer para" style="font-family: 'Aladin', cursive; font-size: 1.2rem;">Happy Customer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <i class="fa-solid fa-star para"></i>
+                <p class="para" style="margin-top: 15px; font-family: 'Bubblegum Sans', cursive; font-size: 1.2rem; word-spacing: 3px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, labore ex eos corrupti excepturi ad. Dolore tenetur ipsa corrupti. Autem, nihil in dolorum laboriosam nesciunt quisquam magnam doloremque sint dolorem incidunt, ducimus vel quia voluptatum ad obcaecati sed suscipit illum.</p>
+                <div class="flex customer-info">
+                    <img src="IMAGES/customer-3.jpg" alt="customer-2" class="review-img">
+                    <div>
+                        <h2 class="para" style="font-family: 'Aladin', cursive; font-size: 2rem;">Oliver</h2>
+                        <h4 class="happy-customer para" style="font-family: 'Aladin', cursive; font-size: 1.2rem;">Happy Customer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="shirt-section-footer ">
+            <!-- <a href="Review-card/index.html" target="_blank" class="hover-link" style="margin-right: 20px;">Write <i class="fa-solid fa-arrow-right fa-sm"></i></a> -->
+            <a href="#" class="hover-link" >More  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section container flex" id="contact">
+        <div class="section-header">Contact Us</div>
+        <div class="contact-section-content flex">
+                <div class="form flex">
+                    <form id="LoginForm">
+                        <input type="text" name="Username" id="Username" placeholder="Ribhav Singla">
+                        <input type="email" name="Email" id="Email" placeholder="ribhavsingla@outlook.com">
+                        <input type="text" name="Phonenumber" id="Phonenumber" placeholder="9815653691">
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Good Evening ..."></textarea>
+                        <!-- <a href="" id="contactbutton">Send Message</a> -->
+                        <input type="submit" value="Send Message" id="submit-btn">
+                    </form>
+                </div>
+            <img src="IMAGES/contact-us-banner-img.png" alt="">
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer-section-links">
+        <div class="footer-links container flex">
+            <div class="quick-links" >
+                <h3 class="footer-heading neon-text">Quick Links</h3>
+                <ul class="more-links">
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">Home</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">About</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">Products</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">Review</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">Contact</a></li>
+                </ul>
+            </div>
+            <div class="extra-links">
+                <h3 class="footer-heading neon-text">Extra Links</h3>
+                <ul class="more-links">
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">My Account</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">My Order</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">My Favorite</a></li>
+                </ul>
+            </div>
+            <div class="locations">
+                <h3 class="footer-heading neon-text">Locations</h3>
+                <ul class="more-links">
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">India</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">USA</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">Japan</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">France</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3 class="footer-heading neon-text">Contact Info</h3>
+                <ul class="more-links">
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">+981-565-3691</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">ribhavsingla@outlook.com</a></li>
+                    <li class="footer-zoom-link para"><a href="#" style="font-family: 'Bubblegum Sans', cursive;">Chandigarh, India - 160036</a></li>
+                    <li class="footer-zoom-link para"><a href="https://www.linkedin.com/in/ribhav-singla-5a5a64253/" target="_blank" style="font-family: 'Bubblegum Sans', cursive;">Linkedin</a></li>
+                    <li class="footer-zoom-link para"><a href="https://www.instagram.com/ribhav__singla/?igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank" style="font-family: 'Bubblegum Sans', cursive;">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-box container flex neon-text">
+            <h4 style="font-family: 'Aladin', cursive; font-size: 1.5rem;">Created By :- <span style="font-family: 'Aladin', cursive;">Ribhav Singla</span></h4>
+            <h4 style="font-family: 'Aladin', cursive; font-size: 1.5rem;">|</h4>
+            <h4 style="font-family: 'Aladin', cursive; font-size: 1.5rem;">&copy; All Rights Reserved</h4>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
